@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gustavo Lozano — Poesía · Fotografía · Cursos</title>
+  <meta name="description" content="Gustavo Lozano (Gus) — poeta, fotógrafo y tallerista. Lecturas, libros, series del Litoral y cursos de literatura contemporánea." />
+  <meta name="author" content="Gustavo Lozano" />
+  <link rel="icon" href="img/lzn01b.jpg" />
+  <link rel="canonical" href="https://gustavolozano.com.ar" />
+  <meta property="og:title" content="Gustavo Lozano — Poesía · Fotografía · Cursos" />
+  <meta property="og:description" content="Poeta, fotógrafo y tallerista. Libros, expos, agenda y notas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/lzn06.jpg" />
+  <meta property="og:locale" content="es_AR" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in { animation: fade .9s ease-out both; }
+    @keyframes fade { from {opacity:0; transform: translateY(6px);} to {opacity:1; transform:none;} }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Gustavo Lozano",
+    "alternateName":["Gus","@guslozanox"],
+    "jobTitle":["Poeta","Fotógrafo","Tallerista"],
+    "url":"https://gustavolozano.com.ar",
+    "sameAs":[
+      "https://www.instagram.com/guslozano",
+      "https://x.com/guslozanox",
+      "https://www.youtube.com/@guslozanox",
+      "https://guslozano.tumblr.com"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="#inicio" class="font-semibold tracking-wide text-slate-900">Gustavo Lozano</a>
+        <nav class="hidden md:flex gap-6 text-sm" aria-label="Principal">
+          <a href="#poesia" class="hover:text-slate-900">Poesía</a>
+          <a href="#fotografia" class="hover:text-slate-900">Fotografía</a>
+          <a href="#cursos" class="hover:text-slate-900">Cursos</a>
+          <a href="#notas" class="hover:text-slate-900">Notas</a>
+          <a href="#sobremi" class="hover:text-slate-900">Sobre mí</a>
+          <a href="#contacto" class="hover:text-slate-900">Contacto</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="menuBtn" class="p-2 rounded-lg border border-slate-300" aria-expanded="false" aria-controls="mobileNav" aria-label="Abrir menú">☰</button>
+        </div>
+      </div>
+      <nav id="mobileNav" class="md:hidden hidden pb-4" aria-label="Navegación móvil">
+        <div class="grid gap-2 text-sm">
+          <a href="#poesia" class="px-2 py-1 rounded hover:bg-slate-100">Poesía</a>
+          <a href="#fotografia" class="px-2 py-1 rounded hover:bg-slate-100">Fotografía</a>
+          <a href="#cursos" class="px-2 py-1 rounded hover:bg-slate-100">Cursos</a>
+          <a href="#notas" class="px-2 py-1 rounded hover:bg-slate-100">Notas</a>
+          <a href="#sobremi" class="px-2 py-1 rounded hover:bg-slate-100">Sobre mí</a>
+          <a href="#contacto" class="px-2 py-1 rounded hover:bg-slate-100">Contacto</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="fade-in">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight text-slate-900">Gustavo Lozano</h1>
+          <p class="mt-2 text-lg text-slate-600">Poeta · Fotógrafo · Tallerista</p>
+          <p class="mt-6 text-slate-700 max-w-prose">Entre el río y la llanura, escribo y hago fotografías. Aquí reúno libros, series, agenda de lecturas y cursos.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#cursos" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 text-white hover:bg-slate-800">Próximos cursos</a>
+            <a href="#fotografia" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-100">Ver series fotográficas</a>
+          </div>
+          <div class="mt-6 flex items-center gap-4" aria-label="Redes sociales">
+            <a class="underline decoration-slate-300 hover:decoration-slate-700" href="https://www.instagram.com/guslozano" target="_blank" rel="noopener">Instagram</a>
+            <a class="underline decoration-slate-300 hover:decoration-slate-700" href="https://x.com/guslozanox" target="_blank" rel="noopener">X</a>
+            <a class="underline decoration-slate-300 hover:decoration-slate-700" href="https://www.youtube.com/@guslozanox" target="_blank" rel="noopener">YouTube</a>
+            <a class="underline decoration-slate-300 hover:decoration-slate-700" href="https://guslozano.tumblr.com" target="_blank" rel="noopener">Newsletter</a>
+          </div>
+        </div>
+        <div class="fade-in md:justify-self-end">
+          <div class="aspect-[4/3] w-full max-w-xl bg-[url('img/lzn06.jpg')] bg-cover bg-center rounded-3xl shadow-xl" role="img" aria-label="Paisaje con río y luz de tarde"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="poesia" class="py-16 md:py-20 border-t border-slate-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-end justify-between gap-6">
+        <div>
+          <h2 class="text-3xl font-bold text-slate-900">Poesía</h2>
+          <p class="mt-2 text-slate-600 max-w-prose">Libros, lecturas y publicaciones.</p>
+        </div>
+        <a href="#contacto" class="hidden md:inline-flex px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-50">Invitar a leer</a>
+      </div>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <article class="rounded-2xl bg-slate-50 border border-slate-200 p-5">
+          <h3 class="font-semibold text-slate-900">El sol entre los cardos</h3>
+          <p class="text-sm text-slate-600">Editorial Halley · 2024–2025</p>
+          <p class="mt-3 text-slate-700">Poemario sobre el Litoral, la infancia y la luz. Presentaciones y reseñas.</p>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a href="#" class="underline">Ver reseñas</a>
+            <a href="#" class="underline">Comprar</a>
+          </div>
+        </article>
+        <article class="rounded-2xl bg-slate-50 border border-slate-200 p-5">
+          <h3 class="font-semibold text-slate-900">Lecturas & performance</h3>
+          <p class="text-sm text-slate-600">Agenda</p>
+          <p class="mt-3 text-slate-700">Fechas de lectura y presentaciones.</p>
+          <div class="mt-4"><a href="#contacto" class="underline">Consultar fechas</a></div>
+        </article>
+        <article class="rounded-2xl bg-slate-50 border border-slate-200 p-5">
+          <h3 class="font-semibold text-slate-900">Publicaciones</h3>
+          <p class="text-sm text-slate-600">Antologías y revistas</p>
+          <p class="mt-3 text-slate-700">Selección curada.</p>
+          <div class="mt-4"><a href="#notas" class="underline">Leer online</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="fotografia" class="py-16 md:py-20 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-end justify-between gap-6">
+        <div>
+          <h2 class="text-3xl font-bold text-slate-900">Fotografía</h2>
+          <p class="mt-2 text-slate-600 max-w-prose">Series del campo, arroyos y pájaros del Litoral. Copias fine‑art a pedido.</p>
+        </div>
+        <a href="#contacto" class="hidden md:inline-flex px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-50">Consultar obra</a>
+      </div>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <figure class="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden">
+          <img src="img/lzn01b.jpg" alt="Campo con flores y cielo (Holga)" class="w-full h-full object-cover lightbox-img" />
+        </figure>
+        <figure class="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden">
+          <img src="img/lzn02.jpg" alt="Maleza y árbol seco" class="w-full h-full object-cover lightbox-img" />
+        </figure>
+        <figure class="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden">
+          <img src="img/lzn04_b.jpg" alt="Hilera de estacas al atardecer" class="w-full h-full object-cover lightbox-img" />
+        </figure>
+        <figure class="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden">
+          <img src="img/lzn06.jpg" alt="Rollo de paja en campo abierto" class="w-full h-full object-cover lightbox-img" />
+        </figure>
+        <figure class="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden">
+          <img src="img/lzn08.jpg" alt="Cardos nocturnos con flash" class="w-full h-full object-cover lightbox-img" />
+        </figure>
+        <figure class="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden">
+          <img src="img/lzn09.jpg" alt="Vegetación nocturna con cielo enrojecido" class="w-full h-full object-cover lightbox-img" />
+        </figure>
+        <figure class="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden">
+          <img src="img/lzn14.jpg" alt="Arbusto iluminado de noche" class="w-full h-full object-cover lightbox-img" />
+        </figure>
+        <figure class="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden">
+          <img src="img/lzn20.jpg" alt="Bañado al atardecer" class="w-full h-full object-cover lightbox-img" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="cursos" class="py-16 md:py-20 border-t border-slate-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-end justify-between gap-6">
+        <div>
+          <h2 class="text-3xl font-bold text-slate-900">Cursos de literatura</h2>
+          <p class="mt-2 text-slate-600 max-w-prose">Talleres de lectura y escritura. Programas intensivos y acompañamientos personalizados.</p>
+        </div>
+        <a href="#contacto" class="hidden md:inline-flex px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-50">Anotarme</a>
+      </div>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <article class="rounded-2xl border border-slate-200 p-5 bg-slate-50">
+          <h3 class="font-semibold text-slate-900">Moby Dick: leer el horizonte</h3>
+          <p class="text-sm text-slate-600">8 encuentros · online</p>
+          <p class="mt-3 text-slate-700">Una travesía por el mito, la blancura y el delirio.</p>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a href="#" class="underline">Programa</a>
+            <a href="#contacto" class="underline">Inscripción</a>
+          </div>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-5 bg-slate-50">
+          <h3 class="font-semibold text-slate-900">Poesía del Litoral</h3>
+          <p class="text-sm text-slate-600">6 encuentros · híbrido</p>
+          <p class="mt-3 text-slate-700">Juan L., Calveyra, Saer, y escrituras del agua.</p>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a href="#" class="underline">Programa</a>
+            <a href="#contacto" class="underline">Inscripción</a>
+          </div>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-5 bg-slate-50">
+          <h3 class="font-semibold text-slate-900">Taller de escritura: Diario de una flor</h3>
+          <p class="text-sm text-slate-600">Mensual · cupos reducidos</p>
+          <p class="mt-3 text-slate-700">Ejercicios breves y edición de proyectos fotopoéticos.</p>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a href="#" class="underline">Programa</a>
+            <a href="#contacto" class="underline">Inscripción</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="notas" class="py-16 md:py-20 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-slate-900">Notas & enlaces</h2>
+      <p class="mt-2 text-slate-600 max-w-prose">Entrevistas, reseñas y colaboraciones externas.</p>
+      <ul class="mt-6 space-y-3 list-disc pl-6">
+        <li><a href="#" class="underline">Reseña de “El sol entre los cardos” — [Medio]</a></li>
+        <li><a href="#" class="underline">Entrevista sobre fotografía de campo — [Medio]</a></li>
+        <li><a href="#" class="underline">Crónica de lectura en Amorada Arte — [Blog]</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="sobremi" class="py-16 md:py-20 border-t border-slate-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-8 items-start">
+      <div class="md:col-span-2">
+        <h2 class="text-3xl font-bold text-slate-900">Sobre mí</h2>
+        <p class="mt-3 text-slate-700 max-w-prose">Poeta y fotógrafo entrerriano, vivo en Buenos Aires. Trabajo con series fotográficas y diarios; exploro el Litoral, su flora y su fauna.</p>
+        <p class="mt-3 text-slate-700">Para prensa y bio extensa, descargá el dossier.</p>
+        <div class="mt-4"><a href="#" class="inline-flex px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-50">Descargar dossier (.pdf)</a></div>
+      </div>
+      <div>
+        <div class="rounded-2xl border border-slate-200 p-5 bg-slate-50">
+          <h3 class="font-semibold text-slate-900">Datos rápidos</h3>
+          <ul class="mt-3 text-slate-700 space-y-1 text-sm">
+            <li>• Poeta · Fotógrafo · Tallerista</li>
+            <li>• Libro: <em>El sol entre los cardos</em></li>
+            <li>• Proyecto: Serie Campo & Cardos</li>
+            <li>• Firma: @guslozanox</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-16 md:py-20 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-slate-900">Contacto</h2>
+      <p class="mt-2 text-slate-600">Invitaciones, cursos, ventas de obra y prensa.</p>
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
+        <form class="rounded-2xl border border-slate-200 p-5 bg-white" action="mailto:hola@gustavolozano.com.ar" method="post" enctype="text/plain" aria-label="Formulario de contacto">
+          <label class="block text-sm text-slate-700">Nombre
+            <input required type="text" name="nombre" class="mt-1 w-full rounded-xl border-slate-300 focus:border-slate-400 focus:ring-slate-400" />
+          </label>
+          <label class="block text-sm text-slate-700 mt-4">Email
+            <input required type="email" name="email" class="mt-1 w-full rounded-xl border-slate-300 focus:border-slate-400 focus:ring-slate-400" />
+          </label>
+          <label class="block text-sm text-slate-700 mt-4">Mensaje
+            <textarea required name="mensaje" rows="5" class="mt-1 w-full rounded-xl border-slate-300 focus:border-slate-400 focus:ring-slate-400"></textarea>
+          </label>
+          <button type="submit" class="mt-4 inline-flex px-4 py-2 rounded-xl bg-slate-900 text-white hover:bg-slate-800">Enviar</button>
+          <p class="mt-2 text-xs text-slate-500">O escribime a <span class="font-mono">hola@gustavolozano.com.ar</span></p>
+        </form>
+        <div class="rounded-2xl border border-slate-200 p-5 bg-slate-50">
+          <h3 class="font-semibold text-slate-900">Redes y enlaces</h3>
+          <ul class="mt-3 space-y-2">
+            <li><a class="underline" href="https://www.instagram.com/guslozano" target="_blank" rel="noopener">Instagram @guslozano</a></li>
+            <li><a class="underline" href="https://www.youtube.com/@guslozanox" target="_blank" rel="noopener">YouTube @guslozanox</a></li>
+            <li><a class="underline" href="https://x.com/guslozanox" target="_blank" rel="noopener">X (Twitter) @guslozanox</a></li>
+            <li><a class="underline" href="https://guslozano.tumblr.com" target="_blank" rel="noopener">Newsletter (Tumblr)</a></li>
+          </ul>
+          <div class="mt-6">
+            <a href="https://wa.me/541170542045" class="inline-flex px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-100">WhatsApp: +54 11 7054 2045</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-slate-200 py-10 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-500">© <span id="y"></span> Gustavo Lozano. Hecho con amor y viento del Litoral.</p>
+      <div class="text-xs text-slate-500">Prototipo · Dominio sugerido: gustavolozano.com.ar</div>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="fixed inset-0 hidden bg-black/80 z-50 items-center justify-center p-6">
+    <button id="lbClose" class="absolute top-4 right-4 text-white text-2xl" aria-label="Cerrar">×</button>
+    <img id="lbImg" alt="Imagen ampliada" class="max-h-[85vh] max-w-[90vw] rounded-xl shadow-2xl" />
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const btn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mobileNav');
+    btn?.addEventListener('click', ()=>{
+      const open = nav.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!open));
+    });
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    const lbClose = document.getElementById('lbClose');
+    document.querySelectorAll('.lightbox-img').forEach(img => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', ()=>{
+        lbImg.src = img.src;
+        lb.classList.remove('hidden');
+        lb.classList.add('flex');
+      });
+    });
+    function closeLb(){ lb.classList.add('hidden'); lb.classList.remove('flex'); lbImg.removeAttribute('src'); }
+    lbClose.addEventListener('click', closeLb);
+    lb.addEventListener('click', (e)=>{ if(e.target===lb) closeLb(); });
+    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeLb(); });
+  </script>
+</body>
+</html>
