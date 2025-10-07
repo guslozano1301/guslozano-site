@@ -25,7 +25,14 @@ pre.verso{white-space:pre-wrap;font-family:ui-serif, Georgia, 'Times New Roman',
 small.muted{color:var(--muted)}
 section+section{margin-top:28px}
 h3{margin-bottom:8px}
-.card img {
-  object-fit: cover;
-  height: 380px;
+/* Portadas sin recorte, con marco suave */
+img.portada {
+  width: 100%;
+  height: auto;           /* que crezca según su proporción */
+  display: block;
+  object-fit: contain;    /* encaja entera */
+  background: #fff;       /* “vitrina” blanca alrededor si sobra espacio */
+  padding: 8px;           /* pequeño margen interno */
+  border: 1px solid #eee; /* filo sutil */
+  border-radius: 12px;
 }
