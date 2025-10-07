@@ -39,3 +39,66 @@ img.portada{
 }
 .portadas-grid .card{display:flex;flex-direction:column}
 .portadas-grid .card h4,.portadas-grid .card p{margin-top:10px}
+/* === Lightbox minimalista (no JS) === */
+.lb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 16px;
+}
+
+.lb-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+}
+
+.lb-thumb {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  transition: transform .15s ease;
+  cursor: zoom-in;
+}
+.lb-thumb:hover { transform: scale(1.01); }
+
+/* Overlay */
+.lb-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 999;
+}
+.lb-overlay:target { display: flex; }
+
+/* Imagen grande */
+.lb-photo {
+  max-width: 92vw;
+  max-height: 86vh;
+  border-radius: 12px;
+  box-shadow: 0 2px 22px rgba(0,0,0,.5);
+  border: 1px solid #111;
+}
+
+/* Cerrar */
+.lb-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+  line-height: 1;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.25);
+  background: rgba(0,0,0,.25);
+}
+.lb-close:hover { background: rgba(255,255,255,.15); }
