@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-
 <header>
   <div class="container">
     <div class="brand">
@@ -26,33 +25,51 @@
 
 <main class="container">
   <h2>Talleres</h2>
-  <div class="grid">
-    <article class="card">
-      <h3>Lecturas de la orilla</h3>
-      <p>Un viaje por poetas del Litoral: Ortiz, Calveyra, di Giorgio.</p>
-    </article>
-    <article class="card">
-      <h3>Moby Dick: una brújula de lectura</h3>
-      <p>5 encuentros para perderse con sentido.</p>
-    </article>
-  </div>
-  <section id="inscripcion" style="margin-top:20px">
-    <h3>Preinscripción</h3>
-    <form name="preinscripcion" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="preinscripcion">
-      <label>Nombre
-        <input type="text" name="nombre" required>
-      </label>
-      <label>Email
-        <input type="email" name="email" required>
-      </label>
-      <label>Taller de interés
-        <input type="text" name="taller" placeholder="Ej: Moby Dick">
-      </label>
-      <button class="btn" type="submit">Enviar</button>
-      <p><small class="muted">Los envíos aparecen en Netlify → Forms.</small></p>
-    </form>
-  </section>
+
+  <article class="workshop-card">
+    <div>
+      <h3>Lectura de Moby Dick</h3>
+      <p class="subtitle">Subite al barco a cazar la ballena blanca.</p>
+      <p><small class="muted">En cada puerto entenderás los entrecruzamientos con la poesía, la Biblia, Shakespeare y la Odisea.</small></p>
+
+      <details class="accordion" style="margin-top:12px;">
+        <summary>Capítulos / Ejes del recorrido</summary>
+        <ol>
+          <li>Llamadme Ishmael — Apertura y brújula del viaje</li>
+          <li>El Pequod — Tripulación, rituales y presagios</li>
+          <li>Queequeg — Amistad, alteridad y comunidad</li>
+          <li>El sermón de Mapple — La Biblia y Jonás</li>
+          <li>Shakespeare en cubierta — Monólogos y coros</li>
+          <li>El mar como biblioteca — Ciencia, mito y catálogo</li>
+          <li>Ahab — Obsesión, símbolo y destino</li>
+          <li>La cacería — La ballena blanca y el límite</li>
+        </ol>
+      </details>
+
+      <section id="inscripcion" style="margin-top:16px">
+        <h4>Preinscripción</h4>
+        <form name="preinscripcion" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="preinscripcion">
+          <label>Nombre
+            <input type="text" name="nombre" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+          <label>Mensaje (opcional)
+            <input type="text" name="taller" placeholder="Horarios preferidos, comentarios...">
+          </label>
+          <button class="btn" type="submit">Enviar</button>
+          <p><small class="muted">Los envíos aparecen en Netlify → Forms.</small></p>
+        </form>
+      </section>
+    </div>
+
+    <figure>
+      <img src="/assets/uploads/moby.jpg" alt="Lectura de Moby Dick — Taller">
+      <figcaption><small class="muted">Subí tu foto a <code>/assets/uploads/moby.jpg</code>.</small></figcaption>
+    </figure>
+  </article>
 </main>
 
 <footer>
@@ -79,6 +96,5 @@
     </div>
   </div>
 </footer>
-
 </body>
 </html>
