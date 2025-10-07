@@ -25,14 +25,17 @@ pre.verso{white-space:pre-wrap;font-family:ui-serif, Georgia, 'Times New Roman',
 small.muted{color:var(--muted)}
 section+section{margin-top:28px}
 h3{margin-bottom:8px}
-/* Portadas sin recorte, con marco suave */
-img.portada {
-  width: 100%;
-  height: auto;           /* que crezca según su proporción */
-  display: block;
-  object-fit: contain;    /* encaja entera */
-  background: #fff;       /* “vitrina” blanca alrededor si sobra espacio */
-  padding: 8px;           /* pequeño margen interno */
-  border: 1px solid #eee; /* filo sutil */
-  border-radius: 12px;
+
+/* Portadas completas sin recortes */
+img.portada{
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:contain;
+  background:#fff;
+  padding:8px;
+  border:1px solid #eee;
+  border-radius:12px;
 }
+.portadas-grid .card{display:flex;flex-direction:column}
+.portadas-grid .card h4,.portadas-grid .card p{margin-top:10px}
