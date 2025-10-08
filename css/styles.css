@@ -179,3 +179,16 @@ details.accordion { border:1px solid #eee; border-radius:12px; padding:12px 14px
 details.accordion summary { font-weight:600; cursor:pointer; }
 details.accordion[open]{ box-shadow:0 1px 4px rgba(0,0,0,.04); }
 
+#links h2 {
+  font-family: "Georgia", serif;
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+#links a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color .2s ease;
+}
+#links a:hover { color: #222; text-decoration: underline; }
