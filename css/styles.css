@@ -192,3 +192,7 @@ details.accordion[open]{ box-shadow:0 1px 4px rgba(0,0,0,.04); }
   transition: color .2s ease;
 }
 #links a:hover { color: #222; text-decoration: underline; }
+.portadas-grid img.portada {
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+}
