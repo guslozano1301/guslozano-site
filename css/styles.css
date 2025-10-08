@@ -142,3 +142,24 @@ details.accordion[open] {
   .workshop-card { grid-template-columns: 1.1fr 1fr; }
 }
 <img src="/assets/uploads/logo.png" alt="Logo Gustavo Lozano" class="logo">
+/* Portadas de libros y antologías */
+.card img {
+  max-width: 220px;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Sutil protagonismo para El sol entre los cardos */
+.card img[alt*="El sol entre los cardos"] {
+  max-width: 240px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  transform: scale(1.02);
+}
+
