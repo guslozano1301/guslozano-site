@@ -196,18 +196,21 @@ details.accordion[open]{ box-shadow:0 1px 4px rgba(0,0,0,.04); }
   object-fit: cover;
   aspect-ratio: 3 / 4;
 }
-/* Ajuste del espacio entre el título y el subtítulo */
-header h1 {
-  margin-bottom: 0.2em; /* antes estaba probablemente en 1em o más */
+.brand {
+  display: flex;
+  align-items: baseline; /* alinea h1 y p en la misma línea */
+  gap: 10px;
 }
 
 .brand h1 {
-  margin-bottom: 0;
-  line-height: 1;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 .brand .subtitle {
-  margin-top: -0.2em;  /* acercás aún más la línea */
-  line-height: 1;
+  margin: 0 0 0 10px;
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
 }
 
