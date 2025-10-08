@@ -201,7 +201,13 @@ header h1 {
   margin-bottom: 0.2em; /* antes estaba probablemente en 1em o más */
 }
 
-header h2 {
-  margin-top: 0.1em; /* reduce el salto entre ambos */
+.brand h1 {
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.brand .subtitle {
+  margin-top: -0.2em;  /* acercás aún más la línea */
+  line-height: 1;
 }
 
