@@ -25,6 +25,19 @@ pre.verso{white-space:pre-wrap;font-family:ui-serif, Georgia, 'Times New Roman',
 small.muted{color:var(--muted)}
 section+section{margin-top:28px}
 h3{margin-bottom:8px}
+#links h2 {
+  font-family: "Georgia", serif;
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+#links a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color .2s ease;
+}
+#links a:hover { color: #222; text-decoration: underline; }
 
 /* Portadas completas sin recortes */
 img.portada{
