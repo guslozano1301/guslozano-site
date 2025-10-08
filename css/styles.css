@@ -158,7 +158,7 @@ details.accordion[open] {
 
 /* Sutil protagonismo para El sol entre los cardos */
 .card img[alt*="El sol entre los cardos"] {
-  max-width: 240px;
+  max-width: 480px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
   transform: scale(1.02);
 }
