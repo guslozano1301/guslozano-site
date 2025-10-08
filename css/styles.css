@@ -154,7 +154,7 @@ details.accordion[open] {
 @media (min-width: 720px){
   .workshop-card { grid-template-columns: 1.1fr 1fr; }
 }
-<img src="/assets/uploads/logo.png" alt="Logo Gustavo Lozano" class="logo">
+<img src="/assets/uploads/logo.jpg" alt="Logo Gustavo Lozano" class="logo">
 /* Portadas de libros y antologías */
 .card img {
   max-width: 220px;
