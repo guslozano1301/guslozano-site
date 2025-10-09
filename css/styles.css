@@ -262,4 +262,15 @@ header {
   left: -.25rem;
   opacity: .25;
 }
+.hero .tagline{
+  font-style: italic;
+  color:#666;
+  text-align:center;
+  margin:.75rem 0 1rem;   /* poco aire */
+  font-size:.95rem;
+  line-height:1.35;
+}
+.hero .actions{
+  display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-top:.5rem;
+}
 
