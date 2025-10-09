@@ -273,4 +273,18 @@ header {
 .hero .actions{
   display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-top:.5rem;
 }
+/* Que ninguna imagen desborde en móvil */
+img { 
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hero contenido dentro del ancho de la página */
+.hero-image{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;       /* opcional */
+}
 
