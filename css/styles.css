@@ -217,4 +217,49 @@ header {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
+/* Ajuste fino del espacio entre título y subtítulo */
+.brand h1 {
+  margin-bottom: -0.25em; /* acerca el subtítulo */
+  line-height: 1.05;
+}
+/* (Solo tendrá efecto si algún día agregás .subtitle bajo el h1) */
+.brand .subtitle {
+  margin-top: 0;
+  line-height: 1;
+  font-size: 1rem;
+  font-style: italic;
+  color: #444;
+  position: relative;
+  top: -0.2em; /* empuja hacia arriba */
+}
+
+/* Cita estilizada */
+.quote {
+  margin: 2rem auto;
+  max-width: 640px;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--accent, #222);
+  color: #555;
+  font-style: italic;
+  line-height: 1.6;
+}
+.quote p { margin: 0; }
+.quote cite {
+  display: block;
+  margin-top: .5rem;
+  font-style: normal;
+  color: #777;
+  text-align: right;
+}
+
+/* (Opcional) comilla grande decorativa */
+.quote::before {
+  content: "“";
+  font-size: 3rem;
+  line-height: 1;
+  position: relative;
+  top: .25rem;
+  left: -.25rem;
+  opacity: .25;
+}
 
