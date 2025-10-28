@@ -300,3 +300,24 @@ img {
 .grid.portadas-grid .portada:hover {
   transform: scale(1.03); /* leve zoom al pasar el mouse */
 }
+<link rel="stylesheet" href="/css/styles.css?v=20251008">
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#111111">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Gustavo Lozano — Poesía & Fotografía">
+  <meta property="og:description" content="La belleza está en lo que desaparece: poesía, fotografía y talleres.">
+  <meta property="og:image" content="/assets/logotipo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gustavolozano.ar">
+
+  <!-- Fonts / Fallbacks -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
