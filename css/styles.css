@@ -288,3 +288,15 @@ img {
   border-radius: 16px;       /* opcional */
 }
 
+.grid.portadas-grid .portada {
+  width: 220px;          /* tamaño uniforme */
+  height: 320px;         /* proporción tipo libro vertical */
+  object-fit: cover;     /* mantiene la imagen centrada sin deformarla */
+  border-radius: 8px;    /* esquinas suaves */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.grid.portadas-grid .portada:hover {
+  transform: scale(1.03); /* leve zoom al pasar el mouse */
+}
