@@ -6,16 +6,19 @@
   <title>Poesía — Gustavo Lozano</title>
   <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
+
 <header>
   <div class="container">
     <div class="brand">
       <div style="width:28px;height:28px;border-radius:8px;background:var(--accent)"></div>
       <h1>Gustavo Lozano — Poesía & Fotografía</h1>
     </div>
+
     <nav>
       <a href="/index.html">Inicio</a>
-      <a href="/poesia/index.html">Poesía</a>
+      <a href="/poesia/index.html" class="active">Poesía</a>
       <a href="/fotografia/index.html">Fotografía</a>
       <a href="/talleres/index.html">Talleres</a>
       <a href="/links/index.html">Links</a>
@@ -25,49 +28,48 @@
   </div>
 </header>
 
-
 <main class="container">
+
   <h2>Poesía</h2>
 
-  <!-- 🌾 Tarjeta Goodreads - formato apaisado con portada grande -->
+  <!-- =============================== -->
+  <!-- 🌾 TARJETA DEL LIBRO -->
+  <!-- =============================== -->
+
   <div style="max-width: 960px; margin: 2em auto; padding: 1.5em 2em; border-radius: 16px; box-shadow: 0 3px 12px rgba(0,0,0,0.1); background-color: #faf9f6; display: flex; align-items: center; justify-content: space-between; gap: 2em; font-family: 'Georgia', serif; flex-wrap: wrap;">
     
-    <!-- Imagen de portada más grande -->
-    <img src="/assets/uploads/el-sol-entre-los-cardos.jpg" alt="El sol entre los cardos (tapa)" style="width: 300px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
-    
-    <!-- Texto descriptivo -->
+    <img src="/assets/uploads/el-sol-entre-los-cardos.jpg"
+         alt="El sol entre los cardos (tapa)"
+         style="width: 300px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+
     <div style="flex: 1; min-width: 280px;">
       <h3 style="margin-bottom: 0.3em;">El sol entre los cardos</h3>
       <p style="font-style: italic; margin: 0.3em 0;">Halley Editores · 2025</p>
+
       <p style="font-size: 1em; color: #444; margin: 0.5em 0;">
         Un libro de poemas donde el paisaje rural se vuelve memoria y revelación.<br>
         Entre cardos, arroyos y silencios, los versos exploran la pertenencia, la pérdida y la luz que persiste en el campo.
       </p>
 
-      <!-- Botones Goodreads + Comprar -->
       <a href="https://www.goodreads.com/book/show/243106602-el-sol-entre-los-cardos"
          target="_blank" rel="noopener noreferrer"
-         style="display: inline-block; margin-top: 0.8em; padding: 0.6em 1.4em; border-radius: 8px; background-color: #6b4e3d; color: white; text-decoration: none; font-weight: bold;">
+         style="display:inline-block; margin-top:0.8em; padding:0.6em 1.4em; border-radius:8px; background-color:#6b4e3d; color:white; text-decoration:none; font-weight:bold;">
          Ver en Goodreads
       </a>
 
       <a href="https://nidodelcardenalarte.mitiendanube.com/libros"
          target="_blank" rel="noopener noreferrer"
-         style="display: inline-block; margin-top: 0.8em; margin-left: 0.5em; padding: 0.6em 1.4em; border-radius: 8px; background-color: #c99a5b; color: white; text-decoration: none; font-weight: bold;">
+         style="display:inline-block; margin-top:0.8em; margin-left:0.5em; padding:0.6em 1.4em; border-radius:8px; background-color:#c99a5b; color:white; text-decoration:none; font-weight:bold;">
          Comprar
       </a>
-
     </div>
-
   </div>
 
-  <!-- 🪶 Título de sección de poemas -->
+  <!-- =============================== -->
+  <!-- 🪶 ALGUNOS POEMAS -->
+  <!-- =============================== -->
+
   <h3 style="text-align:center; margin-top: 2em;">Algunos poemas</h3>
-
-
-  <!-- ===================================== -->
-  <!-- 📚 POEMARIOS -->
-  <!-- ===================================== -->
 
   <details class="accordion" style="margin-top:20px;">
     <summary>Entre los cardos</summary>
@@ -92,23 +94,26 @@
     </ul>
   </details>
 
-<!-- ===================================== -->
-<!-- 📖 CUENTO BREVE -->
-<!-- ===================================== -->
+  <!-- =============================== -->
+  <!-- 📖 CUENTO BREVE -->
+  <!-- =============================== -->
 
-<h3 style="text-align:center; margin-top: 2.5em;">Cuento breve</h3>
+  <h3 style="text-align:center; margin-top: 2.5em;">Cuento breve</h3>
 
-<details class="accordion" style="margin-top:20px;">
-  <summary>Ojos verdes</summary>
-  <ul class="clean" style="margin-top:10px">
-    <li><a href="/cuentos/ojos-verdes/">Leer cuento</a></li>
-  </ul>
-</details>
+  <details class="accordion" style="margin-top:20px;">
+    <summary>Ojos verdes</summary>
+    <ul class="clean" style="margin-top:10px">
+      <li><a href="/cuentos/ojos-verdes/">Leer cuento</a></li>
+    </ul>
+  </details>
 
-
+  <!-- =============================== -->
+  <!-- 📚 ANTÓLOGIAS -->
+  <!-- =============================== -->
 
   <section>
     <h3>Antologías</h3>
+
     <div class="grid portadas-grid">
       
       <article class="card">
@@ -138,7 +143,6 @@
         </p>
       </article>
 
-      <!-- 🌙 Nueva antología -->
       <article class="card">
         <img class="portada" src="/assets/uploads/Breve.jpg" alt="Breve — Editorial Camalote, 2025">
         <h4>Breve</h4>
@@ -159,23 +163,27 @@
       <div>
         <strong>Redes</strong>
         <ul class="clean">
-          <li><a href="https://instagram.com/guslozano" target="_blank" rel="noopener">Instagram @guslozano</a></li>
-          <li><a href="https://youtube.com/@guslozanox" target="_blank" rel="noopener">YouTube @guslozanox</a></li>
-          <li><a href="https://guslozano.tumblr.com" target="_blank" rel="noopener">Newsletter</a></li>
-          <li><a href="https://wa.me/541170542045" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://instagram.com/guslozano">Instagram @guslozano</a></li>
+          <li><a href="https://youtube.com/@guslozanox">YouTube @guslozanox</a></li>
+          <li><a href="https://guslozano.tumblr.com">Newsletter</a></li>
+          <li><a href="https://wa.me/541170542045">WhatsApp</a></li>
         </ul>
       </div>
+
       <div>
         <strong>Contacto</strong>
         <p>Para invitaciones, talleres y muestras.</p>
         <p><span class="btn secondary">@guslozanox</span></p>
       </div>
+
       <div>
         <strong>Créditos</strong>
-        <p>Portafolio estático publicado en Netlify.<br><small class="muted">Ligero y listo para crecer.</small></p>
+        <p>Portafolio estático publicado en Netlify.<br>
+        <small class="muted">Ligero y listo para crecer.</small></p>
       </div>
     </div>
   </div>
 </footer>
+
 </body>
 </html>
