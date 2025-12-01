@@ -507,10 +507,12 @@ img {
 }
 
 .hero-rotator img.hero-image {
+  display: block;
   width: 100%;
   height: auto;
-  max-height: 420px; /* AJUSTÁ ESTE VALOR a gusto */
+  max-height: 420px;   /* podés bajar a 380 o 360 si la querés más bajita */
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
 }
+
