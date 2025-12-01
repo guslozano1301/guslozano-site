@@ -5,23 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gustavo Lozano — Poesía & Fotografía</title>
 
-  <!-- Favicon básico -->
+  <!-- Favicons -->
   <link rel="icon" href="/favicon.ico">
-
-  <!-- PNGs para navegadores modernos -->
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-
-  <!-- SVG (ligero y nítido) -->
   <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
-
-  <!-- iOS / iPadOS -->
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-
-  <!-- Pinned tab (Safari) -->
   <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#111111">
-
-  <!-- PWA / Android -->
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#111111">
 
@@ -35,6 +25,7 @@
       <div style="width:28px;height:28px;border-radius:8px;background:var(--accent)"></div>
       <h1>Gustavo Lozano — Poesía & Fotografía</h1>
     </div>
+
     <nav>
       <a href="/index.html">Inicio</a>
       <a href="/poesia/index.html">Poesía</a>
@@ -48,11 +39,13 @@
 </header>
 
 <main class="container">
+
+  <!-- HERO -->
   <section class="hero">
     <h2>Un diálogo entre la imagen y la poesía</h2>
     <p>Un sitio para reunir <em>poemas</em>, <em>series fotográficas</em> y <em>talleres</em>.</p>
 
-    <!-- HERO ROTATIVO -->
+    <!-- HERO ROTATOR -->
     <div class="hero-rotator" aria-label="Imágenes de presentación">
       <figure class="hero-slide is-active">
         <img src="/assets/uploads/recepcion.jpg"
@@ -60,7 +53,6 @@
              class="hero-image">
       </figure>
 
-      <!-- Cambiá estas rutas por las que quieras usar como segunda y tercera portada -->
       <figure class="hero-slide">
         <img src="/assets/uploads/portada-arroyo.jpg"
              alt="Ramas inclinadas sobre un arroyo entrerriano"
@@ -73,7 +65,7 @@
              class="hero-image">
       </figure>
     </div>
-    <!-- FIN HERO ROTATIVO -->
+    <!-- END HERO ROTATOR -->
 
     <blockquote class="quote">
       <p class="tagline">
@@ -82,33 +74,110 @@
       </p>
     </blockquote>
 
-    <section class="sobre-mi">
-  <div class="sobre-mi-inner">
-    <img src="/assets/uploads/gus.jpg" alt="Retrato de Gustavo Lozano" class="sobre-mi-foto">
-
-    <div class="sobre-mi-texto">
-      <h3>Sobre mí</h3>
-      <p>Soy Gustavo Lozano, poeta y fotógrafo entrerriano.  
-      Trabajo con la luz, el monte y la memoria como si fueran  
-      viejos caminos que vuelven solos.</p>
-
-      <p>Desde hace años reúno en un mismo gesto la imagen y la palabra,  
-      buscando en ambas una forma de volver a casa.</p>
-    </div>
-  </div>
-</section>
-
     <div class="actions">
       <a class="btn" href="/fotografia/index.html">Ver fotografía</a>
       <a class="btn secondary" href="/poesia/index.html">Leer poesía</a>
     </div>
-
   </section>
+
+
+  <!-- SOBRE MÍ -->
+  <section class="sobre-mi">
+    <div class="sobre-mi-inner">
+
+      <img src="/assets/uploads/gus.jpg"
+           alt="Retrato de Gustavo Lozano"
+           class="sobre-mi-foto">
+
+      <div class="sobre-mi-texto">
+        <h3>Sobre mí</h3>
+        <p>
+          Soy Gustavo Lozano, poeta y fotógrafo entrerriano.
+          Trabajo con la luz, el monte y la memoria como si fueran
+          viejos caminos que vuelven solos.
+        </p>
+        <p>
+          Desde hace años reúno en un mismo gesto la imagen y la palabra,
+          buscando en ambas una forma de volver a casa.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- POEMAS DESTACADOS -->
+  <section class="poemas-destacados">
+    <h3>Poemas destacados</h3>
+
+    <div class="poemas-grid">
+
+      <article>
+        <h4>El sol entre los cardos</h4>
+        <p class="poema-fragmento">
+          A veces la tarde abre un surco<br>
+          en el campo,<br>
+          y uno escucha cómo respira la luz.
+        </p>
+        <a class="leer-mas" href="/poesia/index.html">Leer más</a>
+      </article>
+
+      <article>
+        <h4>Arroyo Molino</h4>
+        <p class="poema-fragmento">
+          Bajo el sauce el agua dice<br>
+          lo que la memoria calla.
+        </p>
+        <a class="leer-mas" href="/poesia/index.html">Leer más</a>
+      </article>
+
+      <article>
+        <h4>Regreso al monte</h4>
+        <p class="poema-fragmento">
+          El viento norte danza<br>
+          en los espinillos.<br>
+          El monte me invita a entrar.
+        </p>
+        <a class="leer-mas" href="/poesia/index.html">Leer más</a>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- LIBRO -->
+  <section class="libro-home">
+    <div class="libro-inner">
+
+      <img src="/assets/uploads/el-sol-entre-los-cardos.jpg"
+           alt="Tapa del libro El sol entre los cardos"
+           class="libro-portada">
+
+      <div>
+        <h3>El sol entre los cardos</h3>
+        <p>
+          Mi último poemario publicado por Editorial Halley.
+          Una travesía por el monte, la luz y los rastros del campo.
+        </p>
+
+        <a href="https://nidodelcardenalarte.mitiendanube.com/productos/el-sol-entre-los-cardos/"
+           class="btn"
+           target="_blank"
+           rel="noopener">
+          Comprar libro
+        </a>
+      </div>
+
+    </div>
+  </section>
+
 </main>
+
 
 <footer>
   <div class="container">
     <div class="grid">
+
       <div>
         <strong>Redes</strong>
         <ul class="clean">
@@ -135,11 +204,13 @@
           <small class="muted">Ligero y listo para crecer.</small>
         </p>
       </div>
+
     </div>
   </div>
 </footer>
 
-<!-- SCRIPT DEL ROTADOR -->
+
+<!-- HERO SCRIPT (sin fundido) -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelectorAll('.hero-rotator .hero-slide');
