@@ -506,3 +506,11 @@ img {
   content: none !important;
 }
 
+.hero-rotator img.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 420px; /* AJUSTÁ ESTE VALOR a gusto */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
