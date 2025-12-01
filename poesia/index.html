@@ -4,16 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Poesía — Gustavo Lozano</title>
-  <link rel="stylesheet" href="/css/styles.css?v=20251008">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
 
+<body>
 <header>
   <div class="container">
     <div class="brand">
       <div style="width:28px;height:28px;border-radius:8px;background:var(--accent)"></div>
       <h1>Gustavo Lozano — Poesía & Fotografía</h1>
     </div>
+
     <nav>
       <a href="/index.html">Inicio</a>
       <a href="/poesia/index.html">Poesía</a>
@@ -26,116 +27,140 @@
   </div>
 </header>
 
-<main class="container poemas">
 
-  <section>
-    <h2>Poesía</h2>
-    <p>
-      Este espacio reúne una parte de mis poemas publicados y en proceso:
-      libros, antologías y textos que siguen creciendo alrededor del monte,
-      el río y la memoria.
-    </p>
-  </section>
+<main class="container">
 
-  <!-- LIBRO PRINCIPAL -->
-  <section class="poesia-bloque">
-    <h3>Libro</h3>
-    <div class="poesia-grid">
-      <article>
-        <h4>El sol entre los cardos</h4>
-        <p>
-          Poemario editado por Editorial Halley (2025). Un recorrido por el monte,
-          la luz y los rastros del campo entrerriano.
-        </p>
-        <p>
-          <a class="btn secondary" href="https://nidodelcardenalarte.mitiendanube.com/productos/libro-el-sol-entre-los-cardos-poesia-2025/" target="_blank" rel="noopener">
-            Comprar libro
-          </a>
-        </p>
-      </article>
+  <h2>Poesía</h2>
+
+  <!-- 🌾 Tarjeta Goodreads -->
+  <div style="
+    max-width: 960px;
+    margin: 2em auto;
+    padding: 1.5em 2em;
+    border-radius: 16px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    background-color: #faf9f6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    font-family: 'Georgia', serif;
+    flex-wrap: wrap;
+  ">
+    <img src="/assets/uploads/el-sol-entre-los-cardos.jpg"
+         alt="El sol entre los cardos (tapa)"
+         style="width: 300px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+
+    <div style="flex: 1; min-width: 280px;">
+      <h3 style="margin-bottom: 0.3em;">El sol entre los cardos</h3>
+      <p style="font-style: italic; margin: 0.3em 0;">Halley Editores · 2025</p>
+      <p style="font-size: 1em; color: #444; margin: 0.5em 0;">
+        Un libro de poemas donde el paisaje rural se vuelve memoria y revelación.<br>
+        Entre cardos, arroyos y silencios, los versos exploran la pertenencia, la pérdida y la luz que persiste en el campo.
+      </p>
+
+      <a href="https://www.goodreads.com/book/show/243106602-el-sol-entre-los-cardos"
+         target="_blank" rel="noopener noreferrer"
+         style="
+           display: inline-block;
+           margin-top: 0.8em;
+           padding: 0.6em 1.4em;
+           border-radius: 8px;
+           background-color: #6b4e3d;
+           color: white;
+           text-decoration: none;
+           font-weight: bold;
+         ">
+        Ver en Goodreads
+      </a>
     </div>
-  </section>
+  </div>
 
-  <!-- POEMAS EN LÍNEA -->
-  <section class="poesia-bloque">
-    <h3>Poemas en línea</h3>
-    <div class="poesia-grid">
-      <article>
-        <h4>El sol entre los cardos</h4>
-        <p>Un fragmento del libro y una deriva de luz sobre el campo.</p>
-        <p><a class="leer-mas" href="/poesia/el-sol-entre-los-cardos.html">Leer poema</a></p>
-      </article>
 
-      <article>
-        <h4>Arroyo Molino</h4>
-        <p>El abuelo, las vacas, la sequía y un diálogo a solas con el agua.</p>
-        <p><a class="leer-mas" href="/poesia/arroyo-molino.html">Leer poema</a></p>
-      </article>
+  <!-- 🪶 Poemas -->
+  <h3 style="text-align:center; margin-top: 2em;">Algunos poemas</h3>
 
-      <article>
-        <h4>Zambullirse en el verde</h4>
-        <p>El viento norte, los espinillos y el monte que se abre.</p>
-        <p><a class="leer-mas" href="/poesia/regreso-al-monte.html">Leer poema</a></p>
-      </article>
-    </div>
-  </section>
+  <!-- ============================= -->
+  <!-- 📚 POEMARIOS -->
+  <!-- ============================= -->
 
-  <!-- ANTOLÓGICAS / PARTICIPACIONES -->
-  <section class="poesia-bloque">
-    <h3>Antologías y publicaciones</h3>
-    <div class="poesia-grid">
-      <article>
-        <h4>Antologías en Argentina</h4>
+  <details class="accordion" style="margin-top:20px;">
+    <summary>Entre los cardos</summary>
+    <ul class="clean" style="margin-top:10px">
+      <li><a href="/poesia/entre-los-cardos/entre-los-cardos.html">El paisaje y las palabras</a></li>
+      <li><a href="/poesia/entre-los-cardos/ando-por-ahi.html">Ando por ahí</a></li>
+      <li><a href="/poesia/entre-los-cardos/el-quejido-metalico.html">El quejido metálico</a></li>
+    </ul>
+  </details>
+
+  <details class="accordion" style="margin-top:20px;">
+    <summary>Cuaderno de rayos</summary>
+    <ul class="clean" style="margin-top:10px">
+      <li><a href="/poesia/cuaderno-de-rayos/la-antena.html">Arbol en llamas</a></li>
+    </ul>
+  </details>
+
+  <details class="accordion" style="margin-top:20px;">
+    <summary>Un camino a ninguna parte</summary>
+    <ul class="clean" style="margin-top:10px">
+      <li><a href="/poesia/un-camino-a-ninguna-parte/un-camino-a-ninguna-parte.html">Carpincho</a></li>
+    </ul>
+  </details>
+
+
+
+  <!-- ============================= -->
+  <!-- 📚 ANTologías -->
+  <!-- ============================= -->
+
+  <section style="margin-top: 3em;">
+    <h3>Antologías</h3>
+
+    <div class="grid portadas-grid">
+
+      <article class="card">
+        <img class="portada" src="/assets/uploads/diana.jpg" alt="Diana — Camalote, 2025">
+        <h4>Diana</h4>
         <p>
-          Participaciones en compilaciones poéticas de distintos sellos y grupos
-          editoriales. <!-- Acá podés detallar títulos y editoriales -->
+          100 poetas argentinos homenajean a Diana Bellessi.<br>
+          <small class="muted">Editorial Camalote, 2025.</small>
         </p>
-        <!-- EJEMPLO: reemplazá o completá con lo tuyo -->
-        <!--
-        <ul>
-          <li><strong>Título de antología</strong> — Editorial X (Año)</li>
-          <li><strong>Otra antología</strong> — Editorial Y (Año)</li>
-        </ul>
-        -->
       </article>
 
-      <article>
-        <h4>Antologías en Colombia</h4>
+      <article class="card">
+        <img class="portada" src="/assets/uploads/hogar.jpg" alt="Hogar — Camalote, 2025">
+        <h4>Hogar</h4>
         <p>
-          Selección de poemas incluidos en proyectos colectivos en Colombia.
+          Poetas argentinos y familia.<br>
+          <small class="muted">Editorial Camalote, 2025.</small>
         </p>
-        <!-- Igual que arriba: agregá tus títulos -->
-        <!--
-        <ul>
-          <li><strong>Nombre de antología</strong> — Ciudad, Año.</li>
-        </ul>
-        -->
       </article>
 
-      <article>
-        <h4>Otros textos</h4>
+      <article class="card">
+        <img class="portada" src="/assets/uploads/aurorasincielo.jpg" alt="Aurora sin cielo — Komala, 2025">
+        <h4>Aurora sin cielo</h4>
         <p>
-          Poemas y crónicas publicados en revistas, blogs y proyectos digitales.
+          Antología de poesía latinoamericana.<br>
+          <small class="muted">Editorial Komala (Colombia), 2025.</small>
         </p>
-        <!-- Podés poner enlaces externos si los tenés -->
-        <!--
-        <p><a href="URL" target="_blank" rel="noopener">Ver publicación</a></p>
-        -->
       </article>
+
     </div>
   </section>
 
 </main>
 
+
 <footer>
   <div class="container">
     <div class="grid">
+
       <div>
         <strong>Redes</strong>
         <ul class="clean">
-          <li><a href="https://instagram.com/guslozanox" target="_blank" rel="noopener">Instagram @guslozanox</a></li>
+          <li><a href="https://instagram.com/guslozano" target="_blank" rel="noopener">Instagram @guslozano</a></li>
           <li><a href="https://youtube.com/@guslozanox" target="_blank" rel="noopener">YouTube @guslozanox</a></li>
-          <li><a href="https://medium.com/@guslozano" target="_blank" rel="noopener">Newsletter</a></li>
+          <li><a href="https://guslozano.tumblr.com" target="_blank" rel="noopener">Newsletter</a></li>
           <li><a href="https://wa.me/541170542045" target="_blank" rel="noopener">WhatsApp</a></li>
         </ul>
       </div>
@@ -143,10 +168,7 @@
       <div>
         <strong>Contacto</strong>
         <p>Para invitaciones, talleres y muestras.</p>
-        <p>
-          📩 <a href="mailto:guslozano@gmail.com">guslozano@gmail.com</a><br>
-          📸 <a href="https://instagram.com/guslozanox" target="_blank" rel="noopener">@guslozanox</a>
-        </p>
+        <p><span class="btn secondary">@guslozanox</span></p>
       </div>
 
       <div>
@@ -156,6 +178,7 @@
           <small class="muted">Ligero y listo para crecer.</small>
         </p>
       </div>
+
     </div>
   </div>
 </footer>
