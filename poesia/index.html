@@ -3,10 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Poesía — Gustavo Lozano</title>
-  <link rel="stylesheet" href="/css/styles.css">
-</head>
+  <title>Gustavo Lozano — Poesía & Fotografía</title>
 
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#111111">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#111111">
+
+  <link rel="stylesheet" href="/css/styles.css?v=20251008">
+</head>
 <body>
 
 <header>
@@ -15,10 +24,9 @@
       <div style="width:28px;height:28px;border-radius:8px;background:var(--accent)"></div>
       <h1>Gustavo Lozano — Poesía & Fotografía</h1>
     </div>
-
     <nav>
       <a href="/index.html">Inicio</a>
-      <a href="/poesia/index.html" class="active">Poesía</a>
+      <a href="/poesia/index.html">Poesía</a>
       <a href="/fotografia/index.html">Fotografía</a>
       <a href="/talleres/index.html">Talleres</a>
       <a href="/links/index.html">Links</a>
@@ -29,132 +37,112 @@
 </header>
 
 <main class="container">
+  <section class="hero">
+    <h2>Un diálogo entre la imagen y la poesía</h2>
+    <p>Un sitio para reunir <em>poemas</em>, <em>series fotográficas</em> y <em>talleres</em>.</p>
 
-  <h2>Poesía</h2>
+    <!-- HERO ROTATIVO -->
+    <div class="hero-rotator" aria-label="Imágenes de presentación">
+      <figure class="hero-slide is-active">
+        <img src="/assets/uploads/recepcion.jpg" alt="Árbol solitario entre el humo en el campo" class="hero-image">
+      </figure>
 
-  <!-- =============================== -->
-  <!-- 🌾 TARJETA DEL LIBRO -->
-  <!-- =============================== -->
+      <figure class="hero-slide">
+        <img src="/assets/uploads/portada-arroyo.jpg" alt="Ramas inclinadas sobre un arroyo entrerriano" class="hero-image">
+      </figure>
 
-  <div style="max-width: 960px; margin: 2em auto; padding: 1.5em 2em; border-radius: 16px; box-shadow: 0 3px 12px rgba(0,0,0,0.1); background-color: #faf9f6; display: flex; align-items: center; justify-content: space-between; gap: 2em; font-family: 'Georgia', serif; flex-wrap: wrap;">
-    
-    <img src="/assets/uploads/el-sol-entre-los-cardos.jpg"
-         alt="El sol entre los cardos (tapa)"
-         style="width: 300px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
-
-    <div style="flex: 1; min-width: 280px;">
-      <h3 style="margin-bottom: 0.3em;">El sol entre los cardos</h3>
-      <p style="font-style: italic; margin: 0.3em 0;">Halley Editores · 2025</p>
-
-      <p style="font-size: 1em; color: #444; margin: 0.5em 0;">
-        Un libro de poemas donde el paisaje rural se vuelve memoria y revelación.<br>
-        Entre cardos, arroyos y silencios, los versos exploran la pertenencia, la pérdida y la luz que persiste en el campo.
-      </p>
-
-      <a href="https://www.goodreads.com/book/show/243106602-el-sol-entre-los-cardos"
-         target="_blank" rel="noopener noreferrer"
-         style="display:inline-block; margin-top:0.8em; padding:0.6em 1.4em; border-radius:8px; background-color:#6b4e3d; color:white; text-decoration:none; font-weight:bold;">
-         Ver en Goodreads
-      </a>
-
-      <a href="https://nidodelcardenalarte.mitiendanube.com/libros"
-         target="_blank" rel="noopener noreferrer"
-         style="display:inline-block; margin-top:0.8em; margin-left:0.5em; padding:0.6em 1.4em; border-radius:8px; background-color:#c99a5b; color:white; text-decoration:none; font-weight:bold;">
-         Comprar
-      </a>
+      <figure class="hero-slide">
+        <img src="/assets/uploads/portada-monte.jpg" alt="Claro de monte entrerriano con luz suave" class="hero-image">
+      </figure>
     </div>
-  </div>
+    <!-- FIN HERO ROTATIVO -->
 
-  <!-- =============================== -->
-  <!-- 🪶 ALGUNOS POEMAS -->
-  <!-- =============================== -->
+    <blockquote class="quote">
+      <p class="tagline">“La belleza está a menudo en lo que desaparece,
+      en lo que se aleja antes de que podamos nombrarlo.” — Rebecca Solnit</p>
+    </blockquote>
 
-  <h3 style="text-align:center; margin-top: 2em;">Algunos poemas</h3>
-
-  <details class="accordion" style="margin-top:20px;">
-    <summary>Entre los cardos</summary>
-    <ul class="clean" style="margin-top:10px">
-      <li><a href="/poesia/entre-los-cardos/entre-los-cardos.html">El paisaje y las palabras</a></li>
-      <li><a href="/poesia/entre-los-cardos/ando-por-ahi.html">Ando por ahí</a></li>
-      <li><a href="/poesia/entre-los-cardos/el-quejido-metalico.html">El quejido metálico</a></li>
-    </ul>
-  </details>
-
-  <details class="accordion" style="margin-top:20px;">
-    <summary>Cuaderno de rayos</summary>
-    <ul class="clean" style="margin-top:10px">
-      <li><a href="/poesia/cuaderno-de-rayos/la-antena.html">Arbol en llamas</a></li>
-    </ul>
-  </details>
-
-  <details class="accordion" style="margin-top:20px;">
-    <summary>Un camino a ninguna parte</summary>
-    <ul class="clean" style="margin-top:10px">
-      <li><a href="/poesia/un-camino-a-ninguna-parte/un-camino-a-ninguna-parte.html">Carpincho</a></li>
-    </ul>
-  </details>
-
-  <!-- =============================== -->
-  <!-- 📖 CUENTO BREVE -->
-  <!-- =============================== -->
-
-  <h3 style="text-align:center; margin-top: 2.5em;">Cuento breve</h3>
-
-  <details class="accordion" style="margin-top:20px;">
-    <summary>Ojos verdes</summary>
-    <ul class="clean" style="margin-top:10px">
-      <li><a href="/cuentos/ojos-verdes/">Leer cuento</a></li>
-    </ul>
-  </details>
-
-  <!-- =============================== -->
-  <!-- 📚 ANTÓLOGIAS -->
-  <!-- =============================== -->
-
-  <section>
-    <h3>Antologías</h3>
-
-    <div class="grid portadas-grid">
-      
-      <article class="card">
-        <img class="portada" src="/assets/uploads/diana.jpg" alt="Diana — Camalote, 2025">
-        <h4>Diana</h4>
-        <p>
-          100 poetas argentinos homenajean a Diana Bellessi.<br>
-          <small class="muted">Editorial Camalote, 2025.</small>
-        </p>
-      </article>
-
-      <article class="card">
-        <img class="portada" src="/assets/uploads/hogar.jpg" alt="Hogar — Camalote, 2025">
-        <h4>Hogar</h4>
-        <p>
-          Poetas argentinos y familia.<br>
-          <small class="muted">Editorial Camalote, 2025.</small>
-        </p>
-      </article>
-
-      <article class="card">
-        <img class="portada" src="/assets/uploads/aurorasincielo.jpg" alt="Aurora sin cielo — Komala, 2025">
-        <h4>Aurora sin cielo</h4>
-        <p>
-          Antología de poesía latinoamericana.<br>
-          <small class="muted">Editorial Komala (Colombia), 2025.</small>
-        </p>
-      </article>
-
-      <article class="card">
-        <img class="portada" src="/assets/uploads/Breve.jpg" alt="Breve — Editorial Camalote, 2025">
-        <h4>Breve</h4>
-        <p>
-          90 cuentos argentinos.<br>
-          <small class="muted">Editorial Camalote, 2025.</small>
-        </p>
-      </article>
-
+    <div class="actions">
+      <a class="btn" href="/fotografia/index.html">Ver fotografía</a>
+      <a class="btn secondary" href="/poesia/index.html">Leer poesía</a>
     </div>
   </section>
 
+  <!-- SOBRE MÍ -->
+  <section class="sobre-mi">
+    <div class="sobre-mi-inner">
+      <img src="/assets/uploads/gus.jpg" alt="Retrato de Gustavo Lozano" class="sobre-mi-foto">
+
+      <div class="sobre-mi-texto">
+        <h3>Sobre mí</h3>
+        <p>Soy Gustavo Lozano, poeta y fotógrafo entrerriano.
+        Trabajo con la luz, el monte y la memoria como si fueran
+        viejos caminos que vuelven solos.</p>
+
+        <p>Desde hace años reúno en un mismo gesto la imagen y la palabra,
+        buscando en ambas una forma de volver a casa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- POEMAS DESTACADOS -->
+  <section class="poemas-destacados">
+    <h3>Poemas destacados</h3>
+
+    <div class="poemas-grid">
+      <article>
+        <h4>El sol entre los cardos</h4>
+        <p class="poema-fragmento">
+          A veces la tarde abre un surco<br>
+          en el campo,<br>
+          y uno escucha cómo respira la luz.
+        </p>
+        <a class="leer-mas" href="/poesia/index.html">Leer más</a>
+      </article>
+
+      <article>
+        <h4>Arroyo Molino</h4>
+        <p class="poema-fragmento">
+          Bajo el sauce el agua dice<br>
+          lo que la memoria calla.
+        </p>
+        <a class="leer-mas" href="/poesia/index.html">Leer más</a>
+      </article>
+
+      <article>
+        <h4>Regreso al monte</h4>
+        <p class="poema-fragmento">
+          El viento norte danza<br>
+          en los espinillos.<br>
+          El monte me invita a entrar.
+        </p>
+        <a class="leer-mas" href="/poesia/index.html">Leer más</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- LIBRO HOME -->
+  <section class="libro-home">
+    <div class="libro-inner">
+
+      <img src="/assets/uploads/el-sol-entre-los-cardos.jpg"
+        alt="Tapa del libro El sol entre los cardos"
+        class="libro-portada">
+
+      <div>
+        <h3>El sol entre los cardos</h3>
+        <p>Mi último poemario publicado por Editorial Halley.
+        Una travesía por el monte, la luz y los rastros del campo.</p>
+
+        <a href="https://nidodelcardenalarte.mitiendanube.com/productos/el-sol-entre-los-cardos/"
+          class="btn"
+          target="_blank" rel="noopener">
+          Comprar libro
+        </a>
+      </div>
+
+    </div>
+  </section>
 </main>
 
 <footer>
@@ -163,27 +151,48 @@
       <div>
         <strong>Redes</strong>
         <ul class="clean">
-          <li><a href="https://instagram.com/guslozano">Instagram @guslozano</a></li>
-          <li><a href="https://youtube.com/@guslozanox">YouTube @guslozanox</a></li>
-          <li><a href="https://guslozano.tumblr.com">Newsletter</a></li>
-          <li><a href="https://wa.me/541170542045">WhatsApp</a></li>
+          <li><a href="https://instagram.com/guslozanox" target="_blank" rel="noopener">Instagram @guslozanox</a></li>
+          <li><a href="https://youtube.com/@guslozanox" target="_blank" rel="noopener">YouTube @guslozanox</a></li>
+          <li><a href="https://medium.com/@guslozano" target="_blank" rel="noopener">Newsletter</a></li>
+          <li><a href="https://wa.me/541170542045" target="_blank" rel="noopener">WhatsApp</a></li>
         </ul>
       </div>
 
       <div>
         <strong>Contacto</strong>
         <p>Para invitaciones, talleres y muestras.</p>
-        <p><span class="btn secondary">@guslozanox</span></p>
+        <p>
+          📩 <a href="mailto:guslozano@gmail.com">guslozano@gmail.com</a><br>
+          📸 <a href="https://instagram.com/guslozanox" target="_blank" rel="noopener">@guslozanox</a>
+        </p>
       </div>
 
       <div>
         <strong>Créditos</strong>
-        <p>Portafolio estático publicado en Netlify.<br>
-        <small class="muted">Ligero y listo para crecer.</small></p>
+        <p>
+          Portafolio estático publicado en Netlify.<br>
+          <small class="muted">Ligero y listo para crecer.</small>
+        </p>
       </div>
     </div>
   </div>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.hero-rotator .hero-slide');
+    if (!slides.length) return;
+
+    let index = 0;
+    const changeTime = 7000;
+
+    setInterval(function () {
+      slides[index].classList.remove('is-active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('is-active');
+    }, changeTime);
+  });
+</script>
 
 </body>
 </html>
