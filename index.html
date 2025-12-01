@@ -67,13 +67,12 @@
     </div>
     <!-- END HERO ROTATOR -->
 
-   <blockquote class="quote">
-  <p class="tagline">
-    “La belleza está a menudo en lo que desaparece,
-    en lo que se aleja antes de que podamos nombrarlo.” — Rebecca Solnit
-  </p>
-</blockquote>
-
+    <blockquote class="quote">
+      <p class="tagline">
+        “La belleza está a menudo en lo que desaparece,
+        en lo que se aleja antes de que podamos nombrarlo.” — Rebecca Solnit
+      </p>
+    </blockquote>
 
     <div class="actions">
       <a class="btn" href="/fotografia/index.html">Ver fotografía</a>
@@ -94,7 +93,7 @@
         <h3>Sobre mí</h3>
         <p>
           Soy Gustavo Lozano, poeta y fotógrafo. Nací en Entre Ríos, Argentina, a orillas del río Uruguay.
-          Trabajo con la luz, el monte y la memoria como si fueran viejos caminos que vuelven solos.
+          Trabajo con la luz, el monte y la memoria como si fueran el cauce de un arroyo que vuelve solo.
         </p>
         <p>
           Desde hace años reúno en un mismo gesto la imagen y la palabra,
@@ -106,41 +105,41 @@
   </section>
 
 
- <section class="poemas-destacados">
-  <h3>Poemas destacados</h3>
+  <section class="poemas-destacados">
+    <h3>Poemas destacados</h3>
 
-  <div class="poemas-grid">
-    <article>
-      <h4>El sol entre los cardos</h4>
-      <p class="poema-fragmento">
-        A veces la tarde abre un surco<br>
-        en el campo<br>
-        y se oye la luz  respirar.
-      </p>
-      <a class="leer-mas" href="/poesia/el-sol-entre-los-cardos.html">Leer más</a>
-    </article>
+    <div class="poemas-grid">
+      <article>
+        <h4>El sol entre los cardos</h4>
+        <p class="poema-fragmento">
+          A veces la tarde abre un surco<br>
+          en el campo<br>
+          y se oye la luz respirar.
+        </p>
+        <a class="leer-mas" href="/poesia/el-sol-entre-los-cardos.html">Leer más</a>
+      </article>
 
-    <article>
-      <h4>Arroyo Molino</h4>
-      <p class="poema-fragmento">
-        El abuelo llegaba cada tarde<br>
-        con las vacas<br>
-        y una tristeza baja
-      </p>
-      <a class="leer-mas" href="/poesia/arroyo-molino.html">Leer más</a>
-    </article>
+      <article>
+        <h4>Arroyo Molino</h4>
+        <p class="poema-fragmento">
+          El abuelo llegaba cada tarde<br>
+          con las vacas<br>
+          y una tristeza baja
+        </p>
+        <a class="leer-mas" href="/poesia/arroyo-molino.html">Leer más</a>
+      </article>
 
-    <article>
-      <h4>Zambullirse en el verde</h4>
-      <p class="poema-fragmento">
-        El viento norte danza<br>
-        en los espinillos.<br>
-        El monte se abre.
-      </p>
-      <a class="leer-mas" href="/poesia/regreso-al-monte.html">Leer más</a>
-    </article>
-  </div>
-</section>
+      <article>
+        <h4>Zambullirse en el verde</h4>
+        <p class="poema-fragmento">
+          El viento norte danza<br>
+          en los espinillos.<br>
+          El monte se abre.
+        </p>
+        <a class="leer-mas" href="/poesia/regreso-al-monte.html">Leer más</a>
+      </article>
+    </div>
+  </section>
 
 
 
@@ -156,7 +155,7 @@
         <h3>El sol entre los cardos</h3>
         <p>
           Mi último poemario publicado por Editorial Halley.
-          Una travesía por el monte, la luz y los rastros del campo.
+    
         </p>
 
         <a href="https://nidodelcardenalarte.mitiendanube.com/productos/libro-el-sol-entre-los-cardos-poesia-2025/"
@@ -209,13 +208,19 @@
 </footer>
 
 
-<!-- HERO SCRIPT (sin fundido) -->
+<!-- HERO SCRIPT (inicio aleatorio, sin fundido) -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelectorAll('.hero-rotator .hero-slide');
     if (!slides.length) return;
 
-    let index = 0;
+    // índice inicial al azar
+    let index = Math.floor(Math.random() * slides.length);
+
+    // activar sólo el slide elegido
+    slides.forEach(slide => slide.classList.remove('is-active'));
+    slides[index].classList.add('is-active');
+
     const changeTime = 7000; // 7 segundos
 
     setInterval(function () {
