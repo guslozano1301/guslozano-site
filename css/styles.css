@@ -494,4 +494,15 @@ img {
   line-height: 1.4;
   white-space: normal;
 }
+.tagline-solnit {
+  display: block;
+  margin: 1.5rem 0 2rem 0;
+  font-style: italic;
+  text-align: left;   /* o center si te gusta más */
+  line-height: 1.6;
+}
+.quote::before,
+.quote::after {
+  content: none !important;
+}
 
