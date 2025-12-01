@@ -383,3 +383,37 @@ img {
     text-align: center;
   }
 }
+.hero-rotator {
+  position: relative;
+  max-width: 960px;
+  margin: 1.5rem auto 2rem auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Todas las diapositivas empiezan invisibles */
+.hero-rotator .hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  /* sin transición: cambio limpio, sin borroneo */
+}
+
+/* Solo la activa entra en el flujo y se ve */
+.hero-rotator .hero-slide.is-active {
+  position: relative;
+  opacity: 1;
+}
+
+.hero-rotator img.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Opcional, pero lo dejamos prolijo para accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .hero-rotator .hero-slide {
+    /* seguimos sin transición */
+  }
+}
