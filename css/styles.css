@@ -488,4 +488,10 @@ img {
 .leer-mas:hover {
   opacity: .7;
 }
+.quote .tagline {
+  display: inline-block;
+  margin: 0;
+  line-height: 1.4;
+  white-space: normal;
+}
 
