@@ -417,3 +417,32 @@ img {
     /* seguimos sin transición */
   }
 }
+
+.libro-home {
+  margin: 4rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.libro-inner {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* ACÁ domesticamos el tamaño de la tapa */
+.libro-portada {
+  width: 180px;      /* ancho fijo amable */
+  max-width: 40vw;   /* por si la pantalla es muy chica */
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .libro-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
