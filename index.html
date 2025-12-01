@@ -4,25 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gustavo Lozano — Poesía & Fotografía</title>
+
   <!-- Favicon básico -->
-<link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.ico">
 
-<!-- PNGs para navegadores modernos -->
-<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <!-- PNGs para navegadores modernos -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
 
-<!-- SVG (ligero y nítido) -->
-<link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+  <!-- SVG (ligero y nítido) -->
+  <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
 
-<!-- iOS / iPadOS -->
-<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <!-- iOS / iPadOS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
 
-<!-- Pinned tab (Safari) -->
-<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#111111">
+  <!-- Pinned tab (Safari) -->
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#111111">
 
-<!-- PWA / Android -->
-<link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#111111">
+  <!-- PWA / Android -->
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#111111">
 
   <link rel="stylesheet" href="/css/styles.css?v=20251008">
 </head>
@@ -46,23 +47,46 @@
   </div>
 </header>
 
-
 <main class="container">
   <section class="hero">
     <h2>Un diálogo entre la imagen y la poesía</h2>
     <p>Un sitio para reunir <em>poemas</em>, <em>series fotográficas</em> y <em>talleres</em>.</p>
 
-    <img src="/assets/uploads/recepcion.jpg" alt="Un diálogo entre la imagen y la poesía" class="hero-image">
+    <!-- HERO ROTATIVO -->
+    <div class="hero-rotator" aria-label="Imágenes de presentación">
+      <figure class="hero-slide is-active">
+        <img src="/assets/uploads/recepcion.jpg"
+             alt="Árbol solitario entre el humo en el campo"
+             class="hero-image">
+      </figure>
+
+      <!-- Cambiá estas rutas por las que quieras usar como segunda y tercera portada -->
+      <figure class="hero-slide">
+        <img src="/assets/uploads/portada-arroyo.jpg"
+             alt="Ramas inclinadas sobre un arroyo entrerriano"
+             class="hero-image">
+      </figure>
+
+      <figure class="hero-slide">
+        <img src="/assets/uploads/portada-monte.jpg"
+             alt="Claro de monte entrerriano con luz suave"
+             class="hero-image">
+      </figure>
+    </div>
+    <!-- FIN HERO ROTATIVO -->
 
     <blockquote class="quote">
-      <p class="tagline">“La belleza está a menudo en lo que desaparece,
-en lo que se aleja antes de que podamos nombrarlo.” — Rebecca Solnit</p>
-<div class="actions">
-  <a class="btn" href="/fotografia/index.html">Ver fotografía</a>
-  <a class="btn secondary" href="/poesia/index.html">Leer poesía</a>
-</div>
+      <p class="tagline">
+        “La belleza está a menudo en lo que desaparece,
+        en lo que se aleja antes de que podamos nombrarlo.” — Rebecca Solnit
+      </p>
+    </blockquote>
 
-    </p>
+    <div class="actions">
+      <a class="btn" href="/fotografia/index.html">Ver fotografía</a>
+      <a class="btn secondary" href="/poesia/index.html">Leer poesía</a>
+    </div>
+
   </section>
 </main>
 
@@ -99,7 +123,22 @@ en lo que se aleja antes de que podamos nombrarlo.” — Rebecca Solnit</p>
   </div>
 </footer>
 
-</body>
-</html>
+<!-- SCRIPT DEL ROTADOR -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.hero-rotator .hero-slide');
+    if (!slides.length) return;
+
+    let index = 0;
+    const changeTime = 7000; // 7 segundos
+
+    setInterval(function () {
+      slides[index].classList.remove('is-active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('is-active');
+    }, changeTime);
+  });
+</script>
+
 </body>
 </html>
