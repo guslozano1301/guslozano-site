@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Acceso — Retratos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #f5efe6;
+      color: #3b2f2a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.09);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    input[type="password"] {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid #cebca9;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.7rem 1.4rem;
+      border: none;
+      border-radius: 999px;
+      background: #c99a5b;
+      color: white;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover { filter: brightness(1.05); }
+
+    .error {
+      margin-top: 0.5rem;
+      color: #b43232;
+      display: none;
+      font-size: 0.9rem;
+    }
+
+    /* La galería permanece oculta hasta que haya contraseña correcta */
+    #contenido {
+      display: none;
+      margin-top: 1rem;
+    }
+
+    .grid {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+
+    .grid img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="card">
+
+  <h2>Acceso a Retratos</h2>
+
+  <p>Necesitás la palabra justa.</p>
+
+  <input type="password" id="clave" placeholder="Contraseña">
+  <button onclick="acceder()">Entrar</button>
+  <div id="error" class="error">Contraseña incorrecta.</div>
+
+  <div id="contenido">
+    <p>Bienvenido.  
+    Aquí podés ver la serie completa.</p>
+
+    <div class="grid">
+      <!-- Reemplazá estas rutas por tus retratos reales -->
+      <img src="/img/retratos/r1.jpg">
+      <img src="/img/retratos/r2.jpg">
+      <img src="/img/retratos/r3.jpg">
+      <img src="/img/retratos/r4.jpg">
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const CLAVE = "cardos2025"; // Cambiá por tu contraseña
+
+  function acceder() {
+    const clave = document.getElementById("clave").value;
+    const error = document.getElementById("error");
+    const contenido = document.getElementById("contenido");
+
+    if (clave === CLAVE) {
+      error.style.display = "none";
+      contenido.style.display = "block";
+    } else {
+      error.style.display = "block";
+    }
+  }
+</script>
+
+</body>
+</html>
