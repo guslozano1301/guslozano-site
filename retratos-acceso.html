@@ -23,7 +23,7 @@
       padding: 2rem;
       border-radius: 18px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.09);
-      max-width: 600px;
+      max-width: 900px;
       width: 100%;
     }
 
@@ -65,31 +65,24 @@
       margin-top: 1rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem;
+      gap: 1.5rem;
     }
 
-    /* Estilo de cada retrato con el nombre superpuesto */
-    .item-overlay {
-      position: relative;
+    .item {
+      text-align: center;
     }
 
-    .item-overlay img {
+    .item img {
       width: 100%;
       border-radius: 12px;
       object-fit: cover;
       display: block;
     }
 
-    .caption {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 0.4rem 0.6rem;
-      background: rgba(0, 0, 0, 0.45);
-      color: #fff;
-      font-size: 0.85rem;
-      border-radius: 0 0 12px 12px;
+    .nombre {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #6b564a;
     }
   </style>
 
@@ -111,66 +104,66 @@
     Aquí podés ver la serie completa.</p>
 
     <div class="grid">
-      <!-- Cada bloque item-overlay es un retrato con su nombre -->
+      <!-- Cada bloque .item es un retrato con su nombre debajo -->
 
-      <div class="item-overlay">
+      <div class="item">
         <img src="/img/retratos/retrato1.jpg" alt="Caro — (como Hopper)">
-        <div class="caption">Caro — (como Hopper)</div>
+        <p class="nombre">Caro — (como Hopper)</p>
       </div>
 
-      <div class="item-overlay">
+      <div class="item">
         <img src="/img/retratos/retrato2.jpg" alt="Noelia">
-        <div class="caption">Noelia</div>
+        <p class="nombre">Noelia</p>
       </div>
 
-      <div class="item-overlay">
+      <div class="item">
         <img src="/img/retratos/retrato3.jpg" alt="Sol">
-        <div class="caption">Sol</div>
+        <p class="nombre">Sol</p>
       </div>
 
-      <div class="item-overlay">
+      <div class="item">
         <img src="/img/retratos/retrato4.jpg" alt="Deb">
-        <div class="caption">Deb</div>
+        <p class="nombre">Deb</p>
       </div>
 
-      <div class="item-overlay">
+      <div class="item">
         <img src="/img/retratos/retrato5.jpg" alt="Manon I">
-        <div class="caption">Manon I</div>
+        <p class="nombre">Manon I</p>
       </div>
 
-      <div class="item-overlay">
+      <div class="item">
         <img src="/img/retratos/retrato6.jpg" alt="Manon II">
-        <div class="caption">Manon II</div>
+        <p class="nombre">Manon II</p>
       </div>
 
-      <div class="item-overlay">
+      <div class="item">
         <img src="/img/retratos/retrato7.jpg" alt="Lu I">
-        <div class="caption">Lu I</div>
+        <p class="nombre">Lu I</p>
       </div>
 
-      <div class="item-overlay">
+      <div class="item">
         <img src="/img/retratos/retrato8.jpg" alt="Lu II">
-        <div class="caption">Lu II</div>
+        <p class="nombre">Lu II</p>
       </div>
 
-      <div class="item-overlay">
+      <div class="item">
         <img src="/img/retratos/retrato9.jpg" alt="Magenta I">
-        <div class="caption">Magenta I</div>
+        <p class="nombre">Magenta I</p>
       </div>
 
-      <div class="item-overlay">
+      <div class="item">
         <img src="/img/retratos/retrato10.jpg" alt="Magenta II">
-        <div class="caption">Magenta II</div>
+        <p class="nombre">Magenta II</p>
       </div>
 
-      <div class="item-overlay">
+      <div class="item">
         <img src="/img/retratos/retrato11.jpg" alt="Caro I">
-        <div class="caption">Caro I</div>
+        <p class="nombre">Caro I</p>
       </div>
 
-      <div class="item-overlay">
+      <div class="item">
         <img src="/img/retratos/retrato12.jpg" alt="Caro II">
-        <div class="caption">Caro II</div>
+        <p class="nombre">Caro II</p>
       </div>
 
     </div>
@@ -179,7 +172,7 @@
 </div>
 
 <script>
-  const CLAVE = "Gus1301"; // Cambiá por tu contraseña si querés
+  const CLAVE = "Gus1301"; // Podés cambiarla si querés
 
   function acceder() {
     const clave = document.getElementById("clave").value;
