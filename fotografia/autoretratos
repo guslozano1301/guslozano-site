@@ -27,9 +27,9 @@
 <main class="container">
   <h2>Autorretratos</h2>
   <p class="intro">
-    Una serie de imágenes donde la cámara se vuelve espejo.
-    Cada foto guarda un fragmento: fecha, lugar y una breve nota
-    —la luz que había, el viento que soplaba, el ánimo que asomaba.
+    Una serie de imágenes donde la cámara se vuelve un cuaderno de apuntes.
+    Cada foto guarda un fragmento: un dia, un lugar y una breve nota
+    La luz, el viento, el ánimo que asomaba.
   </p>
 
   <div class="gallery">
