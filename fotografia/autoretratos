@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Autorretratos — Gustavo Lozano</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <div class="brand">
+      <div style="width:28px;height:28px;border-radius:8px;background:var(--accent)"></div>
+      <h1>Gustavo Lozano — Poesía & Fotografía</h1>
+    </div>
+    <nav>
+      <a href="/index.html">Inicio</a>
+      <a href="/poesia/index.html">Poesía</a>
+      <a href="/fotografia/index.html">Fotografía</a>
+      <a href="/talleres/index.html">Talleres</a>
+      <a href="/index.html#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2>Autorretratos</h2>
+  <p class="intro">
+    Una serie de imágenes donde la cámara se vuelve espejo.
+    Cada foto guarda un fragmento: fecha, lugar y una breve nota
+    —la luz que había, el viento que soplaba, el ánimo que asomaba.
+  </p>
+
+  <div class="gallery">
+
+    <!-- FOTO 1 -->
+    <div class="photo-card">
+      <img src="/img/autorretratos/gus-01.jpg" alt="Autorretrato">
+      <div class="photo-info">
+        <h3>12 de junio, 2024 — Arroyo Molino</h3>
+        <p>La hora en que el sol dudaba.  
+        Yo también.</p>
+      </div>
+    </div>
+
+    <!-- FOTO 2 -->
+    <div class="photo-card">
+      <img src="/img/autorretratos/gus-02.jpg" alt="Autorretrato">
+      <div class="photo-info">
+        <h3>3 de septiembre, 2024 — Campo del abuelo</h3>
+        <p>Un cardo mordía la luz.  
+        Yo aprendía otra forma de estar.</p>
+      </div>
+    </div>
+
+    <!-- Agregar más fotos repitiendo este bloque -->
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2025 Gustavo Lozano — @guslozanox</p>
+  </div>
+</footer>
+
+</body>
+</html>
