@@ -1,0 +1,10 @@
+# Poema que cambió de dirección
+/poesia/cuaderno-de-rayos/la-antena.html   /poesia/cuaderno-de-rayos/arbol-en-llamas.html   301!
+/poesia/cuaderno-de-rayos/la-antena        /poesia/cuaderno-de-rayos/arbol-en-llamas.html   301!
+
+# Poemas dados de baja: llevan a la página de Poesía
+/poesia/entre-los-cardos/entre-los-cardos.html      /poesia/index.html   301!
+/poesia/entre-los-cardos/entre-los-cardos           /poesia/index.html   301!
+/poesia/entre-los-cardos/el-quejido-metalico.html   /poesia/index.html   301!
+/poesia/entre-los-cardos/el-quejido-metalico        /poesia/index.html   301!
+/poesia/un-camino-a-ninguna-parte/*                 /poesia/index.html   301!
